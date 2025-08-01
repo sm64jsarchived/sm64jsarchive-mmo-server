@@ -1,0 +1,17 @@
+CREATE TABLE geolocations (
+  id SERIAL PRIMARY KEY,
+  query VARCHAR NOT NULL,
+  country_code VARCHAR NOT NULL,
+  region VARCHAR NOT NULL,
+  city VARCHAR NOT NULL,
+  zip VARCHAR NOT NULL,
+  lat FLOAT NOT NULL,
+  lon FLOAT NOT NULL,
+  timezone VARCHAR NOT NULL,
+  isp VARCHAR NOT NULL,
+  mobile BOOLEAN NOT NULL,
+  proxy	BOOLEAN NOT NULL,
+  discord_session_id INTEGER REFERENCES discord_sessions ON DELETE CASCADE,
+  google_session_id INTEGER REFERENCES google_sessions ON DELETE CASCADE,
+  ban_id INTEGER REFERENCES bans ON DELETE CASCADE
+)

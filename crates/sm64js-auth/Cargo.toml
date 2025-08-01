@@ -1,0 +1,21 @@
+[package]
+name = "sm64js-auth"
+version = "0.1.0"
+authors = ["Mario Reder <mreder1289@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+actix-http = { version = "2", features = [ "rustls" ] }
+actix-service = "1"
+actix-session = "0.4"
+actix-web = "3"
+chrono = "0.4"
+futures = "0.3"
+lazy_static = "1"
+maplit = "1"
+paperclip = { git = "https://github.com/wafflespeanut/paperclip.git", rev = "a64cabbb13ad9d51a67c12d3dbf9c986a1ff6585", features = ["actix-nightly", "actix-session", "chrono"] }
+parking_lot = "0.11"
+sm64js-db = { path = "../sm64js-db" }
+
+[features]
+docker = []

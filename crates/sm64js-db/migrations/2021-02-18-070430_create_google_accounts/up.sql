@@ -1,0 +1,4 @@
+CREATE TABLE google_accounts (
+  sub VARCHAR PRIMARY KEY,
+  account_id INTEGER NOT NULL REFERENCES accounts ON DELETE CASCADE
+)
