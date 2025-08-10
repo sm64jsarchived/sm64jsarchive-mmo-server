@@ -125,7 +125,7 @@ impl Permission {
 
 lazy_static! {
     pub static ref ROLES_WITH_PERMISSIONS: HashMap<&'static str, Vec<Permission>> = hashmap! {
-        "MODERATOR_ROLE_ID" => // Moderator
+        "1404218994029760563" => // Moderator
             vec![
                 Permission::GetAccount,
                 Permission::GetAccountExt,
@@ -159,7 +159,7 @@ lazy_static! {
             ]
     };
 
-    pub static ref IN_GAME_ADMIN_ROLES: HashSet<&'static str> = hashset! { "MODERATOR_ROLE_ID", "IN_GAME_CHAT_MOD_ROLE_ID" };
+    pub static ref IN_GAME_ADMIN_ROLES: HashSet<&'static str> = hashset! { "1404218994029760563", "IN_GAME_CHAT_MOD_ROLE_ID" };
 
-    pub static ref ADMIN_ACCOUNTS: Vec<i32> = vec![186, 187, 188,];
+    pub static ref ADMIN_ACCOUNTS: Vec<i32> = vec![188];
 }
