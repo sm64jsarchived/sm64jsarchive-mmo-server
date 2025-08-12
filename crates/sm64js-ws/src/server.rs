@@ -459,13 +459,13 @@ impl Handler<SendPlayerList> for Sm64JsServer {
 
         actix::spawn(async move {
             #[cfg(debug_assertions)]
-            let channel_id = "BOT_CHANNEL_ID";
+            let channel_id = "1404940809303887983";
             #[cfg(not(debug_assertions))]
-            let channel_id = "BOT_CHANNEL_ID";
+            let channel_id = "1404940809303887983";
             #[cfg(debug_assertions)]
-            let message_id = "BOT_MESSAGE_ID";
+            let message_id = "1404941248804032593";
             #[cfg(not(debug_assertions))]
-            let message_id = "BOT_MESSAGE_ID";
+            let message_id = "1404941248804032593";
             send_discord_message(
                 channel_id,
                 Some(message_id),
