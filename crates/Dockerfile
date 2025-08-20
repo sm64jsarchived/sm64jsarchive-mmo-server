@@ -6,6 +6,8 @@ ENV RUSTUP_HOME=/usr/local/rustup \
     RUST_BACKTRACE=full
 
 RUN set -eux; \
+    echo 'deb http://archive.debian.org/debian buster main contrib non-free' > /etc/apt/sources.list; \
+    echo 'deb http://archive.debian.org/debian-security buster/updates main contrib non-free' >> /etc/apt/sources.list; \
     apt-get -o Acquire::Check-Valid-Until=false update; \
     apt-get install -y --no-install-recommends \
     ca-certificates \
