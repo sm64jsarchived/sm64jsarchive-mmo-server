@@ -6,7 +6,7 @@ ENV RUSTUP_HOME=/usr/local/rustup \
     RUST_BACKTRACE=full
 
 RUN set -eux; \
-    apt-get update; \
+    apt-get -o Acquire::Check-Valid-Until=false update; \
     apt-get install -y --no-install-recommends \
     ca-certificates \
     gcc \
