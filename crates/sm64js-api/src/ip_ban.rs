@@ -78,7 +78,7 @@ pub async fn post_ban(
             text: query.ip.clone(),
         });
         sm64js_common::send_discord_message(
-            "MODERATOR_ONLY_CHANNEL_ID",
+            "1408158389619658763",
             None,
             message,
             None,
