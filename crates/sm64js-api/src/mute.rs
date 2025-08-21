@@ -77,7 +77,7 @@ expires_at: {}
             text: format!("#{}", account_info.account.id),
         });
         sm64js_common::send_discord_message(
-            "MODERATOR_ONLY_CHANNEL_ID",
+            "1408158893816811712",
             None,
             message,
             None,
