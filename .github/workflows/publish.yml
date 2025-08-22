@@ -16,13 +16,16 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: Ensure cargo dirs exist
+        run: mkdir -p ~/.cargo/registry ~/.cargo/git
+
       - name: Cache Rust deps
         uses: actions/cache@v3
         with:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-          key: ${{ runner.os }}-cargo-deps-${{ hashFiles('**/Cargo.lock') }}
+          key: ${{ runner.os }}-cargo-deps-${{ hashFiles('**/Cargo.lock') || '' }}
           restore-keys: |
             ${{ runner.os }}-cargo-deps-
 
