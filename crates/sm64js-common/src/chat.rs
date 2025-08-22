@@ -254,7 +254,7 @@ impl ChatHistory {
         message = message.replace(":pogchamp:", "<:pogchamp:1407439274227400756>");
         message = message.replace(":strange:", "<:strange:1407439302152945754>");
         message = message.replace(":tpose:", "<:tpose:1407439317038665799>");
-        message = message.replace(":trollio:", "<:trollio:1407439336122744932>");
+        message = message.replace(":troll:", "<:trollio:1407439336122744932>");
         message = message.replace(":ujel:", "<:ujel:1407528460091523143>");
         message = message.replace(":gordbruh:", "<:gordbruh:1404961914223591595>");
         let is_code = message != "1337";
