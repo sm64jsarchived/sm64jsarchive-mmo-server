@@ -247,7 +247,6 @@ impl ChatHistory {
         let footer = Some(super::DiscordRichEmbedFooter {
             text: format!("#{} - {}", account_info.account.id, level_name),
         });
-        message = message.replace('*', r"\*").replace('_', r"\_");
         message = message.replace(":blj:", "<:blj:1407439123626594305>");
         message = message.replace(":bup:", "<:bup:1407439147446177833>");
         message = message.replace(":discord:", "<:discord:1407439161840898258>");
@@ -260,7 +259,7 @@ impl ChatHistory {
         message = message.replace(":tpose:", "<:tpose:1407439317038665799>");
         message = message.replace(":troll:", "<:troll:1407439336122744932>");
         message = message.replace(":mariostyle:", "<:mariostyle:1407442777679331358>");
-
+        message = message.replace('*', r"\*").replace('_', r"\_");
         let is_code = message != "1337";
         if is_code {
             super::send_discord_message("1404936380143898664", None, message, None, author, footer)
