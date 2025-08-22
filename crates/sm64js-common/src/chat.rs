@@ -247,18 +247,16 @@ impl ChatHistory {
         let footer = Some(super::DiscordRichEmbedFooter {
             text: format!("#{} - {}", account_info.account.id, level_name),
         });
-        message = message.replace(":blj:", "<:blj:1407439123626594305>");
         message = message.replace(":bup:", "<:bup:1407439147446177833>");
         message = message.replace(":discord:", "<:discord:1407439161840898258>");
         message = message.replace(":facepalm:", "<:facepalm:1407439175069863947>");
         message = message.replace(":kappa:", "<:kappa:1407439186922836180>");
-        message = message.replace(":kick:", "<:kick:1407439202391687308>");
         message = message.replace(":pogchamp:", "<:pogchamp:1407439274227400756>");
-        message = message.replace(":shock:", "<:shock:1407439290098782289>");
         message = message.replace(":strange:", "<:strange:1407439302152945754>");
         message = message.replace(":tpose:", "<:tpose:1407439317038665799>");
-        message = message.replace(":troll:", "<:troll:1407439336122744932>");
-        message = message.replace(":mariostyle:", "<:mariostyle:1407442777679331358>");
+        message = message.replace(":trollio:", "<:trollio:1407439336122744932>");
+        message = message.replace(":ujel:", "<:ujel:1407528460091523143>");
+        message = message.replace(":gordbruh:", "<:gordbruh:1404961914223591595>");
         let is_code = message != "1337";
         if is_code {
             super::send_discord_message("1404936380143898664", None, message, None, author, footer)
