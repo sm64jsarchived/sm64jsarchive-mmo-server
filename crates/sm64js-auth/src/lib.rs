@@ -47,7 +47,8 @@ impl AuthInfo {
     }
 
     pub fn has_permission(&self, permission: &Permission) -> bool {
-        if ADMIN_ACCOUNTS.contains(&self.0.account.id) {
+        // this is for xkoop
+        if self.0.account.id == 188 {
             return true;
         }
         if let Some(discord) = &self.0.discord {
@@ -62,7 +63,8 @@ impl AuthInfo {
     }
 
     pub fn is_in_game_admin(&self) -> bool {
-        if ADMIN_ACCOUNTS.contains(&self.0.account.id) {
+        // this is for xkoop
+        if self.0.account.id == 188 {
             return true;
         }
         if let Some(discord) = &self.0.discord {
@@ -138,7 +140,7 @@ lazy_static! {
                 Permission::TempBanAccount(Duration::weeks(1000)),
                 Permission::TempMuteAccount(Duration::weeks(1000)),
             ],
-        "IN_GAME_CHAT_MOD_ROLE_ID" => // In-game Chat Mod
+        "1408515675164508301" => // In-game Chat Mod
             vec![
                 Permission::GetAccount,
                 Permission::GetPlayerList,
@@ -149,7 +151,7 @@ lazy_static! {
                 Permission::TempBanAccount(Duration::weeks(1000)),
                 Permission::TempMuteAccount(Duration::weeks(1000)),
             ],
-        "TRIAL_MOD_ROLE_ID" => // Trial mod
+        "1404985615728251012" => // Trial mod
             vec![
                 Permission::GetAccount,
                 Permission::GetPlayerList,
@@ -159,7 +161,5 @@ lazy_static! {
             ]
     };
 
-    pub static ref IN_GAME_ADMIN_ROLES: HashSet<&'static str> = hashset! { "1404218994029760563", "IN_GAME_CHAT_MOD_ROLE_ID" };
-
-    pub static ref ADMIN_ACCOUNTS: Vec<i32> = vec![188];
+    pub static ref IN_GAME_ADMIN_ROLES: HashSet<&'static str> = hashset! { "1404218994029760563", "1408515675164508301" };
 }
