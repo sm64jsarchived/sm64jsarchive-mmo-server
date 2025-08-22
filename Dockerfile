@@ -14,6 +14,6 @@ RUN set -eux; \
 
 COPY --from=sm64jsarchive-mmo-server:latest /sm64js/target/release/sm64js ./sm64js
 COPY ./openapi ./openapi
-COPY --from=sm64jsarchive-client:latest /usr/src/app/dist ./dist
+COPY --from=gmanthemarioguy/sm64jsarchive-assets:latest /usr/src/app/dist ./dist
 
 CMD ["./sm64js"]
