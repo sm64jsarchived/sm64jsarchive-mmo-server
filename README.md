@@ -4,7 +4,7 @@
 
 [Main Website: sm64jsarchive.com](https://sm64jsarchive.com)
 
-[Steam Group](https://steamcommunity.com/groups/sm64jsarchive)
+[Discord Server](https://discord.gg/eA5hkV4nnU)
 
 ## Prerequisites
 
