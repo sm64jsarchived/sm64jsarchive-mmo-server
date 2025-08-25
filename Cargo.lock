@@ -2324,7 +2324,7 @@ dependencies = [
 [[package]]
 name = "rustrict"
 version = "0.5.12"
-source = "git+https://github.com/GManTheMarioGuy/rustrict.git?branch=gmanthemarioguy#175cb2cc256afbf242f266b355deed36702a8ac1"
+source = "git+https://github.com/GManTheMarioGuy/rustrict.git?branch=gmanthemarioguy#e105b7627b6bd20ad0bd5954cffcc4999ab421fc"
 dependencies = [
  "bitflags",
  "doc-comment",
