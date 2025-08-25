@@ -259,7 +259,7 @@ impl ChatHistory {
         message = message.replace(":gordbruh:", "<:gordbruh:1404961914223591595>");
         let is_code = message != "1337";
         if is_code {
-            super::send_discord_message("1408956558133432421", None, message, None, author, footer)
+            super::send_discord_message("1409581053063991339", None, message, None, author, footer)
                 .await;
         }
     }
