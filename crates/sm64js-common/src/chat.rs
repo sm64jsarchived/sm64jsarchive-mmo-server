@@ -257,6 +257,7 @@ impl ChatHistory {
         message = message.replace(":trollio:", "<:trollio:1407439336122744932>");
         message = message.replace(":ujel:", "<:ujel:1407528460091523143>");
         message = message.replace(":gordbruh:", "<:gordbruh:1404961914223591595>");
+        message = message.replace(":adrian:", "<:adrian:1415520941261455410>");
         let is_code = message != "1337";
         if is_code {
             super::send_discord_message("1409581053063991339", None, message, None, author, footer)
