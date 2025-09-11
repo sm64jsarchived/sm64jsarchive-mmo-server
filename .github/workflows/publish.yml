@@ -29,11 +29,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-cargo-deps-
 
-      - name: Publish server
-        env:
-          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-        run: bash publish-server.sh
+     # - name: Publish server
+     #   env:
+     #     DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+     #     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+     #   run: bash publish-server.sh
 
       - name: Publish game
         env:
